@@ -1,0 +1,19 @@
+# Python / Django
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+*.log
+*.sqlite3
+/static/
+/media/
+*.DS_Store
+.vscode/
+.idea/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json

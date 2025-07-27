@@ -1,0 +1,52 @@
+@keyframes enqueue {
+  0% {
+    transform: translate(-200%, -150%) rotate(-180deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(-20%, -10%) rotate(-30deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes dequeue {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes dequeue-reverse {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(20%, -10%) rotate(30deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(200%, -150%) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.animate-enqueue {
+  animation: enqueue 0.8s ease-out forwards;
+}
+
+.animate-dequeue {
+  animation: dequeue 0.6s ease-in forwards;
+}
+
+.animate-dequeue-reverse {
+  animation: dequeue-reverse 0.8s ease-in forwards;
+}
